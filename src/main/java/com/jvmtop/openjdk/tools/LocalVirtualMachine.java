@@ -362,7 +362,7 @@ public class LocalVirtualMachine
       f = new File(agent);
       if (!f.exists())
       {
-        throw new IOException("Management agent not found");
+        throw new IOException("Management agent not found: " + agent);
       }
     }
 
